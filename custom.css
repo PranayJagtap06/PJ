@@ -336,4 +336,25 @@ p {
   h2 {
     font-size: 1.5rem;
   }
+
+  .contact-content {
+    grid-template-columns: 1fr;  /* Stack in single column on mobile */
+  }
+
+  .contact-info, 
+  .contact-details {
+      grid-column: 1 / -1;  /* Full width on mobile */
+  }
+
+  .contact-header h1 {
+      font-size: 2.5rem;
+  }
+
+  .container-contact {
+      padding: 1rem;
+  }
+
+  .contact-info p {
+      text-align: center;  /* Center text on mobile */
+  }
 }
