@@ -42,15 +42,17 @@
 
             <div class="contact-content">
                 <div class="contact-info">
-                    <p>You can <a href="mailto:pranaydgo06@duck.com" class="link-highlight" target="_blank" rel="noopener noreferrer">email me</a> or find me on
-                        <a href="https://linkedin.com/in/pranayj-ml-engineer" class="link-highlight" target="_blank" rel="noopener noreferrer">LinkedIn</a> if you
+                    <p>You can <a href="mailto:pranaydgo06@duck.com" class="link-highlight" target="_blank"
+                            rel="noopener noreferrer">email me</a> or find me on
+                        <a href="https://linkedin.com/in/pranayj-ml-engineer" class="link-highlight" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a> if you
                         want to connect.
                         You can also find me on <a href="https://discordapp.com/users/1201806402713288715"
                             class="link-highlight" target="_blank" rel="noopener noreferrer">Discord</a>.
-                        I'm not shy of meeting new people so don't hesitate to send a message! If you want to catch me
-                        in a meeting
+                        If you want to catch me in a meeting
                         <a href="https://calendly.com/pranays-jagtap/30min-meet?"
-                            class="link-highlight schedule-meeting" target="_blank" rel="noopener noreferrer">click here to schedule a meeting</a> based on your
+                            class="link-highlight schedule-meeting" target="_blank" rel="noopener noreferrer">click here
+                            to schedule a meeting</a> based on your
                         availability.
                     </p>
                 </div>
@@ -64,12 +66,12 @@
                 </div>
 
                 <div class="illustration">
-                    <img src="meeting.png" alt="Contact illustration" class="img-fluid">
+                    <img src="video-call.svg" alt="Contact illustration" class="img-fluid">
                 </div>
 
                 <div>
-                    <p>You can also send me a quick message using the form below. I'll do our best to get back to you as
-                        soon as possible.
+                    <p>I'm not shy of meeting new people so don't hesitate to send a message using the form below. I'll
+                        do my best to get back to you as soon as possible.
                     </p>
                 </div>
 
@@ -82,9 +84,9 @@
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text">+91</span>
+                                    <input type="text" class="form-group-text" id="country-code" name="country-code" maxlength="4" value="+91">
                                 </div>
-                                <input type="tel" class="form-control" id="phone" name="phone"
+                                <input type="tel" class="form-control" id="phone" name="phone" maxlength="10"
                                     placeholder="Phone Number">
                             </div>
                         </div>
@@ -96,8 +98,8 @@
                             <input type="text" class="form-control" id="company" name="company" placeholder="Company">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject *"
-                                required>
+                            <textarea type="text" class="form-control" id="subject" name="subject" rows="2" placeholder="Subject *"
+                                required></textarea>
                         </div>
                         <div class="form-group">
                             <textarea class="form-control" id="message" name="message" rows="4" placeholder="Question *"
@@ -110,7 +112,11 @@
         </div>
     </main>
 
+    <div id="notification-container"></div>
+
     <script src="script.js"></script>
+    <script src="send_message.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const container = document.querySelector('.container');
