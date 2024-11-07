@@ -141,6 +141,7 @@ h3 {
   text-align: left;
   font-size: 1.5rem;
   text-align: left;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
   letter-spacing: 0.3px;
 }
@@ -241,7 +242,12 @@ p {
 
 .contact-card h3 {
   color: #ffffff;
-  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.3px;
 }
 
 .contact-card p {
@@ -327,7 +333,7 @@ p {
   background-color: #81d4fa;
 }
 
-.notification {
+/* .notification {
   position: fixed;
   top: 20px;
   right: 20px;
@@ -338,14 +344,14 @@ p {
 }
 
 .notification.success {
-  background-color: #28a745; /* Green */
+  background-color: #28a745;
   color: white;
 }
 
 .notification.error {
-  background-color: #dc3545; /* Red */
+  background-color: #dc3545;
   color: white;
-}
+} */
 
 @media (max-width: 767px) {
   .center-cell{
