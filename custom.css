@@ -102,12 +102,12 @@ body {
     margin: 100px;
 }
 .circle img {
-    border-radius: 60%;
-    display: block;
-    border:5px solid #ffffff;
-    height: 100%;
-    width: 100%;
-    /* margin: 10px; */
+  border-radius: 60%;
+  display: block;
+  border:5px solid #ffffff;
+  height: 100%;
+  width: 100%;
+  /* margin: 10px; */
 }
 
 .center {
